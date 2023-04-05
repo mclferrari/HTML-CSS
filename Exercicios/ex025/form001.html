@@ -18,14 +18,25 @@
     <form action="cadastro.php" autocomplete="off" method="post">
         <p>
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" placeholder="digite seu nome" required>
         </p>
 
         <p>
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="digite seu sobrenome" required>
+        </p>
+
+        <p>
+            <label for="date">Data</label>
+            <input type="date" name="date" id="date" required>
+        </p>
+
+        <p>
+            <label for="time">Horario</label>
+            <input type="time" name="time" id="time" required>
         </p>
         <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
